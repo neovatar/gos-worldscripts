@@ -14,9 +14,9 @@
   "esmodules": [
     "./scripts/worldscripts.js"
   ],
-  "url": "https://github.com/neovatar/neovatar-gos-worldscripts",
-  "download": "https://github.com/neovatar/neovatar-gos-worldscripts/releases/lastest/download/neovatar-gos-worldscripts.zip",
-  "manifest": "https://github.com/neovatar/neovatar-gos-worldscripts/releases/latest/download/module.json",
+  "url": "https://github.com/neovatar/gos-worldscripts",
+  "download": "https://github.com/neovatar/gos-worldscripts/releases/latest/download/neovatar-gos-worldscripts.zip",
+  "manifest": "https://github.com/neovatar/gos-worldscripts/releases/latest/download/module.json",
   "id": "neovatar-gos-worldscripts",
   "compatibility": {
     "minimum": "11",
