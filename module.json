@@ -1,0 +1,28 @@
+{
+  "title": "neovatar's dnd5e worldscripts for Ghosts of Saltmarsh campaign",
+  "description": "A bunch of worldscripts to modify the dnd5e ruleset.",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "neovatar",
+      "discord": "neovatar",
+      "flags": {
+        "github": "neovatar"
+      }
+    }
+  ],
+  "esmodules": [
+    "./scripts/worldscripts.js"
+  ],
+  "url": "https://github.com/neovatar/neovatar-gos-worldscripts",
+  "download": "https://github.com/neovatar/neovatar-gos-worldscripts/releases/download/1.0.0/neovatar-gos-worldscripts.zip",
+  "manifest": "https://github.com/neovatar/neovatar-gos-worldscripts//releases/latest/download/module.json",
+  "id": "neovatar-gos-worldscripts",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11"
+  },
+  "name": "neovatar-gos-worldscripts",
+  "minimumCoreVersion": "11",
+  "compatibleCoreVersion": "11"
+}
