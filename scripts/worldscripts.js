@@ -32,7 +32,7 @@ Hooks.on("renderActorSheet5eCharacter2", function(app, [html]) {
       const controls = header.querySelector('div[class="item-header item-controls"]');
       controls.textContent += `${prep.length}`;
       controls.setAttribute("data-tooltip", "Total Prepared Spells");
-      controls.setAttribute("style", "color: white;");
+      controls.setAttribute("style", "color: white; align-items: center;");
     };
   };
 });
