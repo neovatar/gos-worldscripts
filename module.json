@@ -20,7 +20,7 @@
   "id": "neovatar-gos-worldscripts",
   "compatibility": {
     "minimum": "11",
-    "verified": "11"
+    "verified": "12"
   },
   "name": "neovatar-gos-worldscripts",
   "minimumCoreVersion": "11",
