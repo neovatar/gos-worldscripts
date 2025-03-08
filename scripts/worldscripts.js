@@ -4,18 +4,17 @@ Hooks.on("renderItemSheet", (sheet, [html]) => {
   if (game.user.isGM) return;
   const unidentified = sheet.item.system.identified === false;
   if (!unidentified) return;
-  html.querySelectorAll(".dnd5e.sheet.item .sheet-header .item-subtitle label:has(input:not([disabled]))").forEach(n => n.remove());
+  html.querySelectorAll(".pseudo-header-button.state-toggle.toggle-identified").forEach(n => n.remove());
 });
 
 // Remove Identify button from Item Context menu on Actor Sheet
 Hooks.on("dnd5e.getItemContextOptions", (item, buttons) => {
-    if (game.user.isGM) return;
-    const unidentified = item.system.identified === false;
-    if (!unidentified) return;
-    const removeUnid = buttons.findIndex(option => option.name === 'DND5E.Identify');
-    buttons.findSplice(e => e.name === "DND5E.Identify");
+  if (game.user.isGM) return;
+  const unidentified = item.system.identified === false;
+  if (!unidentified) return;
+  const removeUnid = buttons.findIndex(option => option.name === 'DND5E.Identify');
+  buttons.findSplice(e => e.name === "DND5E.Identify");
 });
-
 
 // Add total prepared spells to the spell headers on the character sheet
 Hooks.on("renderActorSheet5eCharacter2", function(app, [html]) {
