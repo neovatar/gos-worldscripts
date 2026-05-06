@@ -15,5 +15,3 @@ Hooks.on("dnd5e.getItemContextOptions", (item, buttons) => {
   const removeUnid = buttons.findIndex(option => option.name === 'DND5E.Identify');
   buttons.findSplice(e => e.name === "DND5E.Identify");
 });
-<button type="button" class="header-control pseudo-header-control state-toggle fa-solid icon fa-wand-sparkles toggle-identified" 
-data-action="toggleState" data-property="system.identified" data-tooltip-direction="DOWN" aria-label="Unidentified" data-tooltip="DND5E.Unidentified.Title"></button>
