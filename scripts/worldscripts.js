@@ -1,10 +1,11 @@
 // Prevent Players from Identifying their items by hiding the buttons from them, only the GM will be able to Identify them
 // Remove Identify button at top of Item Sheet
 Hooks.on("renderItemSheet", (sheet, [html]) => {
+  console.log("Prevent identify | rendering item sheet");
   if (game.user.isGM) return;
   const unidentified = sheet.item.system.identified === false;
   if (!unidentified) return;
-  html.querySelectorAll(".pseudo-header-button.state-toggle.toggle-identified").forEach(n => n.remove());
+  html.querySelectorAll(".header-control.pseudo-header-control.state-toggle.fa-solid.icon.fa-wand-sparkles.toggle-identified").forEach(n => n.remove());
 });
 
 // Remove Identify button from Item Context menu on Actor Sheet
